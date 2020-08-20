@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "rootDir": "src",
+    "outDir": "dist",
+    "sourceMap": false,
+    "baseUrl": "./",
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@helpers": [
+        "./src/helpers"
+      ],
+      "@services": [
+        "./src/services"
+      ],
+      "@interfaces": [
+        "./src/interfaces"
+      ],
+      "@": [
+        "/"
+      ],
+      "@/stubs": [
+        "./src/stubs/"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts"
+  ]
+}
