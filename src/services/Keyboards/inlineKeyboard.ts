@@ -49,7 +49,7 @@ export default {
   },
   paymentMethod: (price, area, isBonusBalanceMatch, bonusBalance, productId) => {
     let keyboard = [
-      [{ text: `🌍 GlobalMoney (${price} грн)`, callback_data: `pP:${area}:${productId}:gM` }, { text: `🔷 EasyPay (${price} грн)`, callback_data: `pP:${area}:${productId}:eP` }],
+      [{ text: `🔷 EasyPay (${price} грн)`, callback_data: `pP:${area}:${productId}:eP` }],
       [{ text: `✖ Отменить заказ`, callback_data: `diO:NoWalletId` }]
     ]
     // if (isBonusBalanceMatch) {
