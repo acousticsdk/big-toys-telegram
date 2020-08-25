@@ -103,6 +103,13 @@ app.get('/statistics', async (req, res) => {
   return await res.status(200).send({ price: allTimePrice, usersCount: users.length, sellingCount: history.length, products })
 })
 
+app.get('/stock', async (req, res) => {
+  const prod = await productsModel.find({'stock':1})
+
+  return await res.status(200).send(prod)
+})
+
+
 app.get('/promocode', async (req, res) => {
   const promocodes = await promocodeModel.find({})
   return await res.status(200).send(promocodes)
